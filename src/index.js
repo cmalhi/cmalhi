@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Resume from 'react-awesome-resume'
 import 'semantic-ui-css/semantic.min.css';
+
 const myJSONResume = {
   basics: {
     name: 'Chetanpreet Malhi',
@@ -30,11 +31,11 @@ const myJSONResume = {
         username: 'cmalhi',
         url: 'https://linkedin.com/in/cmalhi',
       },
-      {
-        network: 'Facebook',
-        username: 'erlichbachman',
-        url: 'https://www.facebook.com/erlich.bachman.144181',
-      },
+      // {
+      //   network: 'Facebook',
+      //   username: 'erlichbachman',
+      //   url: 'https://www.facebook.com/erlich.bachman.144181',
+      // },
     ],
   },
   // work: [
@@ -74,7 +75,12 @@ const myJSONResume = {
       startDate: '2012-03',
       endDate: '(active member)',
       summary: 'Helped organize events to empower immigrant communities in New York',
-      highlights: ['Volunteer at Annual Sikh Day Parade', 'Organized Charity Events', 'Health Fair'],
+      highlights: [
+        'Volunteer at Annual Sikh Day Parade',
+        'Organized Charity Events',
+        'Health Fair',
+        'Census'
+      ],
     },
     {
       organization: 'CSTEP',
@@ -82,14 +88,13 @@ const myJSONResume = {
       website: 'http://cmalhi.com/',
       startDate: '01/2017',
       endDate: '05/2017',
-      summary: 'Aviatio (until its disbandment) was responsible for organizing a daily lunch for homeless employees',
+      summary: 'Mentor student from high needs school district to assist with college access',
       highlights: [
-        'Organizer of the month (2008-05)',
-        'Volunteer of the month (2008-05)',
-        'Chef of the month (2008-05)',
-        'Customer of the month (2008-06)',
+        'Discussed college and career path',
+        'Student was working on a mobile app for his school',
+        'Helped face incredible fear of heights',
       ],
-    },
+    }, 
   ],
   education: [
     {
@@ -101,8 +106,8 @@ const myJSONResume = {
       gpa: '3.7',
       courses: [
         'BCS 370 - Data Structures C++',
-        'EET 441 - CISCO Networking',
-        'EET 418 - Assembly Language',
+        'EET 418 - Microprocessor Interfacing and Control',
+        'EET 441 - Advanced Networking',
       ],
     },
     {
@@ -113,9 +118,10 @@ const myJSONResume = {
       endDate: '09/2017',
       gpa: 'N/A',
       courses: [
-        'DB1101 - Basic SQL',
-        'JS 087 - Javascript Fundamentals',
-        'CS 095 - Advanced HTML',
+        'SQL and noSQL Databases',
+        'Javascript Fundamentals',
+        'HTML5/CSS3',
+        'Node'
       ],
     },
   ],
@@ -211,34 +217,62 @@ const myJSONResume = {
     },
     {
       name: 'Punjabi',
-      level: 'Veteran',
-    },
-    {
-      name: 'Hindi',
-      level: 'Spoken',
-    },
-    {
-      name: 'Urdu',
-      level: 'Spoken',
+      level: 'Fluent',
     },
     {
       name: 'Spanish',
       level: 'Intermediate',
     },
+    {
+      name: 'Hindi',
+      level: 'Basic',
+    },
+    {
+      name: 'Urdu',
+      level: 'Basic',
+    },
   ],
   interests: [
     {
-      name: 'Wildlife',
+      name: 'Bodybuilding',
       keywords: [
-        'Ferrets: More of a hatred than an interest, ferrets are  detrimental to society and any neighbors who would dare to keep them among people are evil',
-        'California Varmint Laws: California penal code says that is is illegal to keep ferrets',
+        'Working out is like coding and eating right is like testing. You can work as hard as you want, without good nutrition you won\'t get far.',
       ],
     },
     {
-      name: 'Bodybuilding',
+      name: 'Technology',
       keywords: [
-        'Focus: Mind muscle connection',
-        'Dicipline: Must resist cheat day',
+        'I\'m always looking into the latest gadgets and software technologies.',
+      ],
+    },
+    {
+      name: 'Photography',
+      keywords: [
+        'Took a trip to the zoo a couple years back and came home with some amazing shots. I\'ve been a fan ever since.',
+      ],
+    },
+    {
+      name: 'Rick and Morty',
+      keywords: [
+        'I love animated Sci-Fi comedies.',
+      ],
+    },
+    {
+      name: 'Video Games',
+      keywords: [
+        'Currently playing Destiny 2 & COD Black Ops 3. PSN - Malhi.',
+      ],
+    },
+    {
+      name: 'FL Studio',
+      keywords: [
+        'There is no music better than the music you create because it comes from within.',
+      ],
+    },
+    {
+      name: 'Fashion',
+      keywords: [
+        'Make a statement everyday.',
       ],
     },
   ],
